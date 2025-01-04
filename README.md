@@ -12,11 +12,11 @@ No Debian/Ubuntu, instale o Ettercap com o seguinte comando:
 ```bash
 sudo apt-get install ettercap-text-only
 
+```
 
 
 
-
-Instalação do Wireshark
+### Instalação do Wireshark
 Para instalar o Wireshark, utilize:
 
 bash
@@ -36,7 +36,11 @@ Explicação do comando:
 /192.168.10.103///: Endereço IP de destino (o dispositivo a ser atacado).
 /192.168.10.1///: Endereço IP do gateway (roteador).
 --write ./ettercap_log: Salva o tráfego de rede capturado no arquivo ettercap_log.
-4. Filtrando DNS no Wireshark
+
+
+
+
+### 4. Filtrando DNS no Wireshark
 Para capturar apenas pacotes DNS no Wireshark, utilize o filtro de exibição:
 
 plaintext
@@ -62,7 +66,8 @@ Aqui, o domínio example.com foi resolvido para o IP 93.184.216.34.
 Como encontrar o nome do site:
 Se você observar as requisições DNS (no campo "Queries"), o nome do site será visível como parte da consulta, como example.com.
 Nas respostas, você poderá ver o domínio resolvido para o endereço IP.
-5. Observações
+
+### 5. Observações
 Certifique-se de ter permissão para realizar o ataque ARP, já que ele pode ser utilizado de forma maliciosa.
 O Wireshark pode capturar tráfego de sites que usam HTTPS, mas o conteúdo será criptografado. Você pode ver o nome do site nas requisições DNS, mas não o conteúdo da comunicação.
 6. Logs e Análise
